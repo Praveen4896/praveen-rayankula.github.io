@@ -3,45 +3,129 @@
 <head>
   <meta charset="UTF-8" />
   <title>Praveen Kumar | Full Stack .NET Developer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
+<body>
   <header>
     <h1>Praveen Kumar</h1>
     <p>Senior Full Stack .NET Developer</p>
+
+    <nav>
+      <button onclick="showTab('home')">Home</button>
+      <button onclick="showTab('about')">About</button>
+      <button onclick="showTab('skills')">Skills</button>
+      <button onclick="showTab('experience')">Experience</button>
+      <button onclick="showTab('projects')">Projects</button>
+      <button onclick="showTab('contact')">Contact</button>
+    </nav>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I am a Senior Full Stack .NET Developer with 11+ years of experience
-      building enterprise-grade web applications. I specialize in C#, .NET Core,
-      SQL Server, and cloud-based solutions on Azure.
-    </p>
-  </section>
+  <main>
+    <!-- HOME -->
+    <section id="home" class="tab active">
+      <h2>Building Scalable Enterprise Applications</h2>
+      <p>
+        Full Stack .NET Developer with strong expertise in modernizing legacy
+        systems, building cloud-ready APIs, and delivering high-performance
+        enterprise applications using .NET, Angular, SQL Server, and Azure.
+      </p>
+    </section>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Enterprise Scan Data Platform</strong> – Built secure APIs and
-      optimized SQL queries to process large-scale retail data.</li>
-      <li><strong>Healthcare Web Portal</strong> – Developed full-stack features
-      using .NET Core and Angular.</li>
-    </ul>
-  </section>
+    <!-- ABOUT -->
+    <section id="about" class="tab">
+      <h2>About Me</h2>
+      <p>
+        I am a Full Stack .NET Developer with extensive experience designing,
+        developing, and supporting enterprise-grade applications across
+        insurance, healthcare, and B2B domains. My work focuses on building
+        secure, scalable, and maintainable systems using C#, .NET Core 6/8,
+        REST APIs, SQL Server, and Angular.
+      </p>
+      <p>
+        I have hands-on experience modernizing legacy applications, integrating
+        third-party APIs, improving performance, and supporting high-volume
+        production systems in Agile environments.
+      </p>
+    </section>
 
-  <section>
-    <h2>Skills</h2>
-    <p>.NET Core, C#, SQL Server, Azure, Angular, React, REST APIs</p>
-  </section>
+    <!-- SKILLS -->
+    <section id="skills" class="tab">
+      <h2>Technical Skills</h2>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: your-email@example.com</p>
-    <p>LinkedIn: linkedin.com/in/your-profile</p>
-  </section>
+      <h3>Backend</h3>
+      <p>C#, .NET Core 3.1/6/7/8, ASP.NET MVC, Web API, EF Core, LINQ, Microservices</p>
 
+      <h3>Frontend</h3>
+      <p>Angular 14–16, React.js, TypeScript, JavaScript, HTML5, CSS3, Bootstrap</p>
+
+      <h3>Cloud & DevOps</h3>
+      <p>Azure App Services, Functions, Storage, Azure SQL, AKS, Docker, Kubernetes, Azure DevOps</p>
+
+      <h3>Databases</h3>
+      <p>SQL Server, PostgreSQL, MySQL, Oracle, Stored Procedures, Index Optimization</p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="tab">
+      <h2>Professional Experience</h2>
+
+      <h3>State Farm Insurance — Full Stack Developer</h3>
+      <span>Feb 2025 – Present</span>
+      <ul>
+        <li>Designed and developed .NET Core 6/8 APIs supporting claims processing systems.</li>
+        <li>Built secure REST APIs using OAuth2 and JWT authentication.</li>
+        <li>Developed Angular components for high-traffic portals.</li>
+        <li>Provided production support, troubleshooting performance and SQL issues.</li>
+        <li>Automated CI/CD pipelines using Azure DevOps.</li>
+      </ul>
+
+      <h3>Memorial Sloan Kettering Cancer Center — Full Stack Developer</h3>
+      <span>Jan 2024 – Nov 2024</span>
+      <ul>
+        <li>Developed large-scale APIs and Angular dashboards used by clinical teams.</li>
+        <li>Integrated systems with Medidata RAVE using secure REST services.</li>
+        <li>Modernized workflows using Azure Functions and DevOps automation.</li>
+        <li>Improved system stability through structured logging and monitoring.</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="tab">
+      <h2>Key Projects</h2>
+
+      <div class="card">
+        <h3>Enterprise Claims Processing Platform</h3>
+        <p>
+          Built scalable .NET Core APIs and Angular UI components to process
+          high-volume insurance claims data.
+        </p>
+        <p><strong>Tech:</strong> .NET 6/8, C#, Angular, SQL Server, Azure</p>
+      </div>
+
+      <div class="card">
+        <h3>Healthcare Clinical Data Platform</h3>
+        <p>
+          Developed secure REST services and dashboards supporting thousands of
+          clinical and research users.
+        </p>
+        <p><strong>Tech:</strong> .NET Core, Angular, Azure Functions</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="tab">
+      <h2>Contact</h2>
+      <p>Email: Praveenkumar903284@gmail.com</p>
+      <p>Phone: +1 (708) 665-7055</p>
+      <p>
+        GitHub:
+        <a href="https://github.com/Praveen4896" target="_blank">github.com/Praveen4896</a>
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
